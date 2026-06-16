@@ -45,8 +45,64 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   };
 }
 
+import Script from "next/script";
+
 export default async function ProductPage({ params }: { params: { id: string } }) {
   const product = await getProductById(params.id);
   
-  return <ProductDetailClient product={product} />;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    image: product.images,
+    description: product.description,
+    offers: {
+      '@type': 'Offer',
+      url: `https://styleforge.com/products/${product.id}`,
+      priceCurrency: 'USD',
+      price: product.price,
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://styleforge.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Products',
+        item: 'https://styleforge.com/products',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: product.name,
+        item: `https://styleforge.com/products/${product.id}`,
+      },
+    ],
+  };
+
+  return (
+    <>
+      <Script
+        id="product-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Script
+        id="breadcrumb-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ProductDetailClient product={product} />
+    </>
+  );
 }

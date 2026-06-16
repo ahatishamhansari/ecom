@@ -67,7 +67,7 @@
 | Inventory management (3.5) | ✅ | Implemented SKU adjustment UI |
 | Dynamic Entity Builder | ⏳ | |
 | UI Config Engine (3.6) | ✅ | Implemented homepage layout configuration UI |
-| StylePulse trend dashboard | ⏳ | |
+| StylePulse trend dashboard (3.7) | ✅ | Implemented analytics charts using recharts |
 | Analytics (ClickHouse) | ⏳ | |
 
 ---

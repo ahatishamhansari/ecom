@@ -76,6 +76,7 @@
 
 | Task | Status | Notes |
 |------|--------|-------|
+| ML Service Setup (4.1) | ✅ | Initialized FastAPI and Docker setup |
 | LensShop visual search | ⏳ | YOLOv8 + CLIP + Qdrant |
 | FitDNA onboarding | ⏳ | MediaPipe + regression |
 | SizeIntelligence feedback loop | ⏳ | |

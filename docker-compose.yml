@@ -57,6 +57,17 @@ services:
     volumes:
       - meili_data:/meili_data
 
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: styleforge_ml_service
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+
 volumes:
   postgres_data:
   mongo_data:

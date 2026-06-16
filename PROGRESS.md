@@ -63,8 +63,8 @@
 | Admin Dashboard Overview (3.2) | ✅ | Implemented stats and recent orders table |
 | Product List & Delete (3.3) | ✅ | Implemented data table with search, pagination, and delete |
 | Product Create & Edit (3.4) | ✅ | Implemented complex form with dynamic attributes |
-| Category management | ⏳ | |
-| Inventory management | ⏳ | |
+| Category management (3.5) | ✅ | Implemented category tree UI |
+| Inventory management (3.5) | ✅ | Implemented SKU adjustment UI |
 | Dynamic Entity Builder | ⏳ | |
 | UI Config Engine | ⏳ | |
 | StylePulse trend dashboard | ⏳ | |

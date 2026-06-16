@@ -13,6 +13,7 @@ import { SearchModule } from './modules/search/search.module';
 import { FitDnaModule } from './modules/fit-dna/fit-dna.module';
 import { DynamicEntityModule } from './modules/dynamic-entity/dynamic-entity.module';
 import { UiConfigModule } from './modules/ui-config/ui-config.module';
+import { AnalyticsModule } from './modules/analytics/analytics.module';
 
 @Module({
   imports: [
@@ -37,6 +38,7 @@ import { UiConfigModule } from './modules/ui-config/ui-config.module';
     FitDnaModule,
     DynamicEntityModule,
     UiConfigModule,
+    AnalyticsModule,
   ],
 })
 export class AppModule {}

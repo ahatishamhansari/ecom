@@ -65,7 +65,7 @@
 | Product Create & Edit (3.4) | ✅ | Implemented complex form with dynamic attributes |
 | Category management (3.5) | ✅ | Implemented category tree UI |
 | Inventory management (3.5) | ✅ | Implemented SKU adjustment UI |
-| Dynamic Entity Builder | ⏳ | |
+| Dynamic Entity Builder (3.8) | ✅ | Implemented PostgreSQL JSONB EAV schema |
 | UI Config Engine (3.6) | ✅ | Implemented homepage layout configuration UI |
 | StylePulse trend dashboard (3.7) | ✅ | Implemented analytics charts using recharts |
 | Analytics (ClickHouse) | ⏳ | |

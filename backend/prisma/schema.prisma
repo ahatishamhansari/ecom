@@ -274,3 +274,31 @@ model Inventory {
 
   @@map("inventory")
 }
+
+// ─── Dynamic Entity Builder (EAV / JSONB Schema) ──────────────────────────────
+
+model DynamicEntity {
+  id          String   @id @default(cuid())
+  entityKey   String   @unique // e.g., "PRODUCT"
+  name        String
+  description String?
+  isActive    Boolean  @default(true)
+  fieldSchema Json     // Array of field definitions (name, type, required, options)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  rows        DynamicEntityRow[]
+
+  @@map("dynamic_entities")
+}
+
+model DynamicEntityRow {
+  id              String   @id @default(cuid())
+  dynamicEntityId String
+  entity          DynamicEntity @relation(fields: [dynamicEntityId], references: [id], onDelete: Cascade)
+  rowData         Json     // The actual values corresponding to the fieldSchema
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("dynamic_entity_rows")
+}

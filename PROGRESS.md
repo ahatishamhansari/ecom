@@ -1,7 +1,7 @@
 # StyleForge — Implementation Progress Tracker
 
-> Last Updated: 2026-06-14
-> Current Phase: **Phase 0 + Phase 1 (In Progress)**
+> Last Updated: 2026-06-16
+> Current Phase: **Phase 3 (In Progress)**
 
 ---
 
@@ -48,10 +48,10 @@
 | Homepage | ✅ | Implemented Hero, Featured Collections, and static metadata |
 | Product Listing Page (PLP) | ✅ | Implemented layout, canonical URLs, and MeiliSearch integration |
 | Product Detail Page (PDP) | ✅ | Implemented image gallery, attribute selection, add to cart |
-| Cart & Checkout flow | ⏳ | |
-| SEO: JSON-LD structured data | ⏳ | |
-| SEO: Dynamic sitemap | ⏳ | |
-| SEO: generateMetadata() | ⏳ | |
+| Cart & Checkout flow | ✅ | Implemented global cart state and UI |
+| SEO: JSON-LD structured data | ✅ | Implemented on PDP |
+| SEO: Dynamic sitemap | ✅ | Added sitemap.ts |
+| SEO: generateMetadata() | ✅ | Configured global metadata |
 
 ---
 
@@ -59,7 +59,8 @@
 
 | Task | Status | Notes |
 |------|--------|-------|
-| Admin layout & routing | ⏳ | |
+| Admin layout & routing (3.1) | ✅ | Configured layout, sidebar, login placeholder |
+| Admin Dashboard Overview (3.2) | ✅ | Implemented stats and recent orders table |
 | Product CRUD | ⏳ | |
 | Category management | ⏳ | |
 | Inventory management | ⏳ | |

@@ -66,7 +66,7 @@
 | Category management (3.5) | ✅ | Implemented category tree UI |
 | Inventory management (3.5) | ✅ | Implemented SKU adjustment UI |
 | Dynamic Entity Builder | ⏳ | |
-| UI Config Engine | ⏳ | |
+| UI Config Engine (3.6) | ✅ | Implemented homepage layout configuration UI |
 | StylePulse trend dashboard | ⏳ | |
 | Analytics (ClickHouse) | ⏳ | |
 

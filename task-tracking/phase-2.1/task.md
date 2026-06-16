@@ -1,0 +1,6 @@
+- `[x]` Create `ThemeProvider.tsx` context for light/dark mode.
+- `[x]` Create responsive `Navbar.tsx` component.
+- `[x]` Create `Footer.tsx` component.
+- `[x]` Update `layout.tsx` to integrate ThemeProvider, Navbar, Footer, and strict `<main>` landmark.
+- `[x]` Add necessary CSS variables/styles to `globals.css` for layout components.
+- `[x]` Export tracking artifacts to `task-tracking/phase-2.1/`.

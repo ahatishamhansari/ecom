@@ -1,0 +1,43 @@
+.ui-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ui-card-header {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ui-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.ui-card-content {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  flex-grow: 1;
+  color: var(--color-text-primary);
+}
+
+/* If CardContent is the first child (no header) */
+.ui-card-content:first-child {
+  padding-top: var(--spacing-md);
+}
+
+.ui-card-footer {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-surface-hover);
+}

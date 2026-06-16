@@ -1,0 +1,6 @@
+- `[x]` Create `Modal.tsx` and `Modal.css` (accessible, backdrop overlay, escape key support).
+- `[x]` Create `Dropdown.tsx` and `Dropdown.css` (custom hook for click-outside).
+- `[x]` Create `Toast.tsx` and `Toast.css` components.
+- `[x]` Create `ToastProvider.tsx` context.
+- `[x]` Update `layout.tsx` to include `ToastProvider`.
+- `[x]` Export tracking artifacts and explanation to `task-tracking/phase-2.3/`.

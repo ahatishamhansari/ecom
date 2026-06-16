@@ -1,0 +1,4 @@
+- `[x]` Setup Google Fonts (Inter, Outfit) in `layout.tsx`
+- `[x]` Remove Tailwind utility classes from `layout.tsx`
+- `[x]` Replace Tailwind in `globals.css` with a comprehensive Vanilla CSS variable system
+- `[x]` Define utility classes (animations, layout) in `globals.css`

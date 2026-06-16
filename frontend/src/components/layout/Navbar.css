@@ -1,0 +1,119 @@
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem; /* 64px */
+}
+
+.navbar-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.05em;
+}
+
+.navbar-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.navbar-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transition: color var(--transition-fast);
+}
+
+.navbar-links a:hover {
+  color: var(--color-primary);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.search-placeholder {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface-hover);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  gap: 0.5rem;
+}
+
+.search-placeholder:hover {
+  background-color: var(--color-border);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-hover);
+  transition: background-color var(--transition-fast);
+  width: 36px;
+  height: 36px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--color-border);
+}
+
+.navbar-btn {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+.navbar-btn:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.cart-btn {
+  position: relative;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  border-radius: var(--radius-full);
+}
+
+.cart-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-full);
+}
+
+.user-menu {
+  gap: 0.5rem;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}

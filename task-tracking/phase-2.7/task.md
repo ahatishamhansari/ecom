@@ -1,0 +1,8 @@
+- `[x]` Create `frontend/src/app/products/[id]/page.tsx` for PDP.
+- `[x]` Implement masonry image gallery and product info layout.
+- `[x]` Add interactive size and color selectors.
+- `[x]` Implement dynamic SEO metadata generation.
+- `[x]` Create `frontend/src/app/products/[id]/page.css` for custom styling.
+- `[x]` Test locally and fix any linter errors.
+- `[x]` Update `PROGRESS.md` for Phase 2.7.
+- `[x]` Create `code_changes_explanation.md` and `walkthrough.md` in Phase 2.7 tracking folder.

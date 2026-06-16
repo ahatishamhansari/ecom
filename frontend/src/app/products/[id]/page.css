@@ -1,0 +1,200 @@
+/* PDP Layout */
+.pdp-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 900px) {
+  .pdp-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Masonry Image Gallery */
+.pdp-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  align-content: start;
+}
+
+.pdp-image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-surface-hover);
+}
+
+.main-image {
+  grid-column: span 2;
+  height: 600px;
+}
+
+.sub-image {
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  .main-image {
+    height: 450px;
+  }
+  .sub-image {
+    height: 250px;
+  }
+}
+
+.pdp-image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pdp-image-wrapper:hover .pdp-image {
+  transform: scale(1.02);
+}
+
+/* Product Details */
+.pdp-details {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 100px; /* Offset for navbar */
+  height: max-content;
+}
+
+.pdp-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.1;
+}
+
+.pdp-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.pdp-description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.125rem;
+}
+
+.pdp-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.pdp-section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Color Options */
+.color-options {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.color-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline-offset: 2px;
+}
+
+.color-btn.active {
+  outline: 2px solid var(--color-primary);
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Size Options */
+.size-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--spacing-sm);
+}
+
+.size-header .pdp-section-title {
+  margin-bottom: 0;
+}
+
+.size-guide-link {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.size-options {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.size-btn {
+  min-width: 60px;
+  height: 48px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+  color: var(--color-text-primary);
+}
+
+.size-btn:hover {
+  border-color: var(--color-primary);
+}
+
+.size-btn.active {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-primary);
+}
+
+/* Actions */
+.pdp-actions {
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  height: 56px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-full);
+}
+
+/* Additional Info */
+.pdp-meta {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}

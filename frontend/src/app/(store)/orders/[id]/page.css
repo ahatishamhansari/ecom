@@ -1,0 +1,109 @@
+.order-container {
+  padding: 4rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.order-container h1 {
+  font-family: var(--font-outfit);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+.order-details-card {
+  text-align: left;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  margin-bottom: 2rem;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-header h2 {
+  font-family: var(--font-outfit);
+  font-size: 1.25rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: rgba(var(--accent-color-rgb), 0.1);
+  color: var(--accent-color);
+}
+
+.status-badge.pending { background-color: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+.status-badge.confirmed { background-color: rgba(16, 185, 129, 0.1); color: #10b981; }
+
+.order-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .order-summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.summary-block h3, .order-items-list h3 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.summary-block p {
+  margin-bottom: 0.25rem;
+}
+
+.order-items-list {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.order-actions .btn-primary {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}

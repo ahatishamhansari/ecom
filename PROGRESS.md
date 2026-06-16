@@ -61,7 +61,8 @@
 |------|--------|-------|
 | Admin layout & routing (3.1) | ✅ | Configured layout, sidebar, login placeholder |
 | Admin Dashboard Overview (3.2) | ✅ | Implemented stats and recent orders table |
-| Product CRUD | ⏳ | |
+| Product List & Delete (3.3) | ✅ | Implemented data table with search, pagination, and delete |
+| Product Create & Edit (3.4) | ⏳ | |
 | Category management | ⏳ | |
 | Inventory management | ⏳ | |
 | Dynamic Entity Builder | ⏳ | |
